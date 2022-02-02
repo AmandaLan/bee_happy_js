@@ -1,7 +1,19 @@
 /////////////////////////////// HOME ///////////////////////////////
 
-main {
-    background-image: url(../img/entete_ruche.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
+.title {
+    display: flex;
+    justify-content: center;
+  
+    .titleImg {
+      position: relative;
+      margin-left: 10rem;
+      .titleText {
+        position: absolute;
+        text-align: center;    
+        top: 0;
+        right: 40rem;
+        width: 60%;
+      }
+    }
+  }
+  

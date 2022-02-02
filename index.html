@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Plaster&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/main.css">
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Plaster&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Bee Happy</title>
-</head>
+  </head>
 
-<body>
-<!-- ........................NAVBAR.......................... -->
+  <body>
+    <!-- ........................NAVBAR.......................... -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Bee Happy</div>
-            <ul class="navigation">
-                <li class="navLink one"><a href="">Home</a></li>
-                <li class="navLink two"><a href="">BeeKeeper</a></li>
-                <li class="navLink three"><a href="">Honey</a></li>
-                <li class="navLink four"><a href="">contact</a></li>
-            </ul>
-            <button class="burger">
-                <span class="bar"></span>
-            </button>
-        </nav>
+      <nav class="navbar">
+        <div class="logo"><h4>Bee Happy</h4></div>
+        <div>
+            <div class="switch">
+              <label class="toggle">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="darkMode">Dark Mode</div>
+        </div>
+        <ul class="navigation">
+          <li class="navLink one"><a href="">Home</a></li>
+          <li class="navLink two"><a href="">BeeKeeper</a></li>
+          <li class="navLink three"><a href="">Honey</a></li>
+          <li class="navLink four"><a href="">contact</a></li>
+        </ul>
+        <button class="burger">
+          <span class="bar"></span>
+        </button>
+      </nav>
     </header>
-<!-- ........................ARTICLE.......................... -->    
+    <!-- ........................ARTICLE.......................... -->
     <main>
-
+      <!-- TITLE PART -->
+      <div class="title">
+        <div class="titleImg">
+          <div class="titleText">
+            <h5>Abeille Company</h5>
+            <h1>Bee Happy</h1>
+            <img src="./assets/img/beeTitle.png" alt="" class="beeTitle" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              dolor placeat praesentium rem natus id reiciendis possimus autem
+              asperiores corrupti iusto provident repellendus tempora, debitis
+              iste beatae deleniti repellat suscipit.
+            </p>
+          </div>
+          <img src="./assets/img/hiveTitle.png" alt="" class="hiveTitle" />
+        </div>
+      </div>
+      <!-- BEEKEEPER PART -->
+      <div class="beekeeper">
+        <div class="beekeperLogo">
+          <img src="./assets/img/person02.png" alt="" />
+          <img src="./assets/img/person01.png" alt="" />
+        </div>
+        <div>
+          <h3>Beekeeper</h3>
+        </div>
+      </div>
+      <!-- HONEY PART -->
+      <div class="honey">
+        <div class="honeyLogo">
+          <img src="./assets/img/honey.png" alt="" />
+          <h2>Sweet Honney</h2>
+        </div>
+        <div class="company">
+          <h5>Abeille Company</h5>
+        </div>
+      </div>
+      <div class="bigbug">
+        <img src="./assets/img/bigbug.png" alt="" />
+      </div>
+      <!-- BEE FLY PART -->
+      <div class="beeFly">
+        <h2>Fly With Me</h2>
+        <img src="./assets/img/beefly.png" alt="" />
+      </div>
+      <div class="beeBG">
+        <img src="./assets/img/beeBG.png" alt="" />
+      </div>
+      <!-- CONTACT PART -->
+      <div>
+        <form action="">
+          <div>
+            <div class="name">
+              <label for="firstname">Firstname</label>
+              <input type="text" name="firstname" id="firstname" required />
+            </div>
+            <div>
+              <label for="lastname">Lastname</label>
+              <input type="text" name="lastname" id="lastname" required />
+            </div>
+          </div>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+          </div>
+          <div>
+            <label for="phone">PhoneNumber</label>
+            <input type="text" name="phone" id="phone" required />
+          </div>
+          <div class="submit">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+      </div>
     </main>
-<!-- ........................FOOTER.......................... -->
+    <!-- ........................FOOTER.......................... -->
     <footer>
-
+        <div>
+            <div class="network">
+              <img src="./assets/img/facebook.png" alt="" />
+              <img src="./assets/img/instagram.png" alt="" />
+              <img src="./assets/img/mail.png" alt="" />
+              <img src="./assets/img/linkedin.png" alt="" />
+            </div>
+            <div class="footerBG">
+              <img src="./assets/img/alveol.png" alt="" />
+            </div>
+        </div>
     </footer>
 
     <script src="./assets/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
