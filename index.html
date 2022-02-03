@@ -20,13 +20,13 @@
       <nav class="navbar">
         <div class="logo"><h4>Bee Happy</h4></div>
         <div>
-            <div class="switch">
-              <label class="toggle">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <div class="darkMode">Dark Mode</div>
+          <div class="switch">
+            <label class="toggle">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="darkMode">Dark Mode</div>
         </div>
         <ul class="navigation">
           <li class="navLink one"><a href="">Home</a></li>
@@ -55,64 +55,74 @@
               iste beatae deleniti repellat suscipit.
             </p>
           </div>
+          <!-- BEEKEEPER PART -->
+          <div class="beekeeper">
+            <div class="beekeperLogo">
+              <div class="brun">
+                <img src="./assets/img/person01.png" alt="" />
+                <div class="blond">
+                  <img src="./assets/img/person02.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="beekeperTitle">
+              <a href=""><h2>Beekeeper</h2></a>
+            </div>
+          </div>
+
+          <!-- HONEY PART -->
+          <div class="honey">
+            <div class="bigbug">
+              <div class="honeyCube">
+                <div class="honeyLogo">
+                  <img src="./assets/img/honey.png" alt="" />
+                  <h2>Sweet Honney</h2>
+                </div>
+              </div>
+              <div class="company">
+                <h5>Abeille Company</h5>
+              </div>
+
+              <img class="bug" src="./assets/img/bigbug.png" alt="" />
+            </div>
+          </div>
+
           <img src="./assets/img/hiveTitle.png" alt="" class="hiveTitle" />
         </div>
       </div>
-      <!-- BEEKEEPER PART -->
-      <div class="beekeeper">
-        <div class="beekeperLogo">
-          <img src="./assets/img/person02.png" alt="" />
-          <img src="./assets/img/person01.png" alt="" />
-        </div>
-        <div>
-          <h3>Beekeeper</h3>
-        </div>
-      </div>
-      <!-- HONEY PART -->
-      <div class="honey">
-        <div class="honeyLogo">
-          <img src="./assets/img/honey.png" alt="" />
-          <h2>Sweet Honney</h2>
-        </div>
-        <div class="company">
-          <h5>Abeille Company</h5>
-        </div>
-      </div>
-      <div class="bigbug">
-        <img src="./assets/img/bigbug.png" alt="" />
-      </div>
+
       <!-- BEE FLY PART -->
-      <div class="beeFly">
-        <h2>Fly With Me</h2>
-        <img src="./assets/img/beefly.png" alt="" />
-      </div>
       <div class="beeBG">
-        <img src="./assets/img/beeBG.png" alt="" />
+        <img class="bg" src="./assets/img/beeBG.png" alt="" />
+        <div class="beeFly">
+          <h2>Fly With Me</h2>
+          <img src="./assets/img/beefly.png" alt="" />
+        </div>
       </div>
       <!-- CONTACT PART -->
-      <div>
+      <div class="contact">
         <form action="">
-          <div>
-            <div class="name">
+          <div class="name">
+            <div class="champs">
               <label for="firstname">Firstname</label>
               <input type="text" name="firstname" id="firstname" required />
             </div>
-            <div>
+            <div class="champs">
               <label for="lastname">Lastname</label>
               <input type="text" name="lastname" id="lastname" required />
             </div>
           </div>
-          <div>
+          <div class="champs">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required />
           </div>
-          <div>
+          <div class="champs">
             <label for="email">Email</label>
             <input type="text" name="email" id="email" required />
           </div>
-          <div>
-            <label for="phone">PhoneNumber</label>
-            <input type="text" name="phone" id="phone" required />
+          <div class="champs">
+            <label for="phone">Topics</label>
+            <input type="text" name="topics" id="topics" required />
           </div>
           <div class="submit">
             <input type="submit" value="Submit" />
@@ -125,17 +135,15 @@
     </main>
     <!-- ........................FOOTER.......................... -->
     <footer>
-        <div>
-            <div class="network">
-              <img src="./assets/img/facebook.png" alt="" />
-              <img src="./assets/img/instagram.png" alt="" />
-              <img src="./assets/img/mail.png" alt="" />
-              <img src="./assets/img/linkedin.png" alt="" />
-            </div>
-            <div class="footerBG">
-              <img src="./assets/img/alveol.png" alt="" />
-            </div>
-        </div>
+      <div class="network">
+        <a href=""><img class="facebook" src="./assets/img/facebook.png" alt="" /></a>
+        <a href=""><img class="insta" src="./assets/img/instagram.png" alt="" /></a>
+        <a href=""><img class="mail" src="./assets/img/mail.png" alt="" /></a>
+        <a href=""><img class="linkedin" src="./assets/img/linkedin.png" alt="" /></a>
+      </div>
+      <div class="footerBG">
+        <img src="./assets/img/alveol.png" alt="" />
+      </div>
     </footer>
 
     <script src="./assets/js/script.js"></script>

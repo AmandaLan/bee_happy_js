@@ -1,0 +1,49 @@
+@keyframes instagram {
+  from {
+    transform: translateY(0rem) rotate(-20deg);
+  }
+
+  to {
+    transform: translateY(8rem) rotate(80deg) ;
+  }
+}
+@keyframes facebook {
+    from {
+      transform: translateY( 20rem) rotate(-20deg);
+    }
+  
+    to {
+      transform: translateY(-5rem) rotate(-80deg) ;
+    }
+  }
+
+footer {
+  margin-top: 20rem;
+  .network {
+    display: flex;
+    justify-content: space-around;
+    a {
+      img {
+        width: 17rem;
+      }
+      .facebook {
+        animation-duration: 2s;
+        animation-name: facebook;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      .insta {
+        animation-duration: 2s;
+        animation-name: instagram;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    }
+  }
+  .footerBG {
+    img {
+      width: 190rem;
+      margin: auto;
+    }
+  }
+}

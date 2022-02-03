@@ -76,7 +76,6 @@ nav .burger {
     position: absolute;
     top: 65px;
     right: 0;
-    background-color: white;
     transition: all 0.5s ease-in-out;
     padding: 2rem;
   }
@@ -95,6 +94,7 @@ nav .burger {
   }
   nav .navActiv {
     width: 100%;
+    z-index: 40;
   }
   nav .navActiv .navLink {
     transform: translate(0);
@@ -159,6 +159,114 @@ nav .burger {
     transform: rotate(-45deg);
   }
 }
+.beeBG {
+  position: relative;
+}
+.beeBG .bg {
+  width: 100%;
+  margin: 0 auto;
+}
+.beeBG .beeFly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.beeBG .beeFly h2 {
+  color: white;
+}
+
+.contact {
+  background-color: #fff9e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact form {
+  margin: 6rem;
+}
+.contact form .name {
+  display: flex;
+}
+.contact form .champs {
+  padding: 3rem 6rem 0 6rem;
+}
+.contact form .champs input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8b7fd4;
+  padding: 1rem;
+}
+.contact form label {
+  color: #8b7fd4;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  padding: 2rem;
+}
+.contact form .submit {
+  display: flex;
+  justify-content: center;
+}
+.contact form .submit input {
+  border: none;
+  width: 20%;
+  color: white;
+  background-color: #8b7fd4;
+  margin-top: 6rem;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  font-size: 3rem;
+}
+.contact h2 {
+  color: #d6d1f3;
+  margin: 6rem;
+}
+
+@keyframes instagram {
+  from {
+    transform: translateY(0rem) rotate(-20deg);
+  }
+  to {
+    transform: translateY(8rem) rotate(80deg);
+  }
+}
+@keyframes facebook {
+  from {
+    transform: translateY(20rem) rotate(-20deg);
+  }
+  to {
+    transform: translateY(-5rem) rotate(-80deg);
+  }
+}
+footer {
+  margin-top: 20rem;
+}
+footer .network {
+  display: flex;
+  justify-content: space-around;
+}
+footer .network a img {
+  width: 17rem;
+}
+footer .network a .facebook {
+  animation-duration: 2s;
+  animation-name: facebook;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+footer .network a .insta {
+  animation-duration: 2s;
+  animation-name: instagram;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+footer .footerBG img {
+  width: 190rem;
+  margin: auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -203,22 +311,179 @@ body p, body a {
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: black;
+  text-decoration: none;
 }
 
 .title {
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 .title .titleImg {
   position: relative;
-  margin-left: 10rem;
+  left: 10%;
+}
+.title .titleImg img {
+  width: 100%;
 }
 .title .titleImg .titleText {
   position: absolute;
   text-align: center;
   top: 0;
-  right: 40rem;
+  right: 50%;
   width: 60%;
+}
+.title .titleImg .titleText .beeTitle {
+  width: 60%;
+}
+.title .titleImg .beekeeper {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 33%;
+  right: 22%;
+}
+.title .titleImg .beekeeper .beekeperLogo {
+  background-color: #d6d1f3;
+  border-radius: 50%;
+  padding: 8rem;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun {
+  position: relative;
+  right: 30%;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun img {
+  width: 20rem;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun img:hover {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun .blond {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun .blond img {
+  width: 25rem;
+}
+.title .titleImg .beekeeper .beekeperLogo .brun .blond img:hover {
+  transform: rotate(30deg);
+  transition: 0.4s;
+}
+.title .titleImg .beekeeper .beekeperTitle {
+  margin-left: 20rem;
+}
+.title .titleImg .beekeeper .beekeperTitle a {
+  color: #6b6b6b;
+}
+.title .titleImg .honey {
+  position: absolute;
+  align-items: center;
+  top: 55%;
+  right: 50%;
+  transform: translate(50%);
+}
+.title .titleImg .honey .bigbug {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.title .titleImg .honey .bigbug .bug {
+  width: 152rem;
+  margin: 0 auto;
+}
+.title .titleImg .honey .bigbug .honeyCube {
+  background-color: #fff9e3;
+  padding: 10rem;
+  position: absolute;
+  text-align: center;
+  right: 50%;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5rem;
+}
+.title .titleImg .honey .bigbug .honeyCube .honeyLogo {
+  width: 45rem;
+}
+.title .titleImg .honey .bigbug .company {
+  position: absolute;
+  right: 30%;
+  top: 20%;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 767.98px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .title .titleImg {
+    display: flex;
+    flex-direction: column;
+  }
+  .title .titleImg img {
+    width: 100%;
+  }
+  .title .titleImg .titleText {
+    text-align: center;
+    top: 35%;
+    left: 30%;
+    transform: translate(-30%, -35%);
+  }
+  .title .titleImg .titleText .beeTitle {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .title .titleImg .beekeeper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 65%;
+    left: 30%;
+    transform: translate(-30%);
+  }
+  .title .titleImg .beekeeper .beekeperLogo {
+    background-color: #d6d1f3;
+    border-radius: 50%;
+    padding: 8rem;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun {
+    position: relative;
+    right: 30%;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun img {
+    width: 20rem;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun img:hover {
+    transform: rotate(-30deg);
+    transition: 0.4s;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun .blond {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun .blond img {
+    width: 25rem;
+  }
+  .title .titleImg .beekeeper .beekeperLogo .brun .blond img:hover {
+    transform: rotate(30deg);
+    transition: 0.4s;
+  }
+  .title .titleImg .beekeeper .beekeperTitle {
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .title .titleImg .beekeeper .beekeperTitle a {
+    color: #6b6b6b;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

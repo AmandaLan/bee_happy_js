@@ -1,4 +1,7 @@
 // sass --watch assets/sass/main.scss assets/css/main.css
 @use "components/navbar";
+@use "components/fly";
+@use "components/contact";
+@use "components/footer";
 @use "base/reset.scss";
 @use "layout/home.scss";

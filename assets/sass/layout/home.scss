@@ -1,19 +1,181 @@
 /////////////////////////////// HOME ///////////////////////////////
 
 .title {
-    display: flex;
-    justify-content: center;
-  
-    .titleImg {
-      position: relative;
-      margin-left: 10rem;
-      .titleText {
-        position: absolute;
-        text-align: center;    
-        top: 0;
-        right: 40rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+
+  .titleImg {
+    position: relative;
+    left: 10%;
+
+    img {
+      width: 100%;
+    }
+    .titleText {
+      position: absolute;
+      text-align: center;
+      top: 0;
+      right: 50%;
+      width: 60%;
+      .beeTitle {
         width: 60%;
       }
     }
+    /////////////////////////////BEEKEEPER////////////////////////////////////////
+    .beekeeper {
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      top: 33%;
+      right: 22%;
+      .beekeperLogo {
+        background-color: #d6d1f3;
+        border-radius: 50%;
+        padding: 8rem;
+        .brun {
+          position: relative;
+          right: 30%;
+          img {
+            width: 20rem;
+            &:hover {
+              transform: rotate(-30deg);
+              transition: 0.4s;
+            }
+          }
+          .blond {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            img {
+              width: 25rem;
+              &:hover {
+                transform: rotate(30deg);
+                transition: 0.4s;
+              }
+            }
+          }
+        }
+      }
+      .beekeperTitle {
+        margin-left: 20rem;
+        a {
+          color: #6b6b6b;
+        }
+      }
+    }
+    /////////////////////////////HONEY////////////////////////////////////////
+    .honey {
+      position: absolute;
+      align-items: center;
+      top: 55%;
+      right: 50%;
+      transform: translate(50%);
+      .bigbug {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        .bug {
+          width: 152rem;
+          margin: 0 auto;
+        }
+        .honeyCube {
+          background-color: #fff9e3;
+          padding: 10rem;
+          position: absolute;
+          text-align: center;
+          right: 50%;
+          top: 5%;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          border-radius: 5rem;
+          .honeyLogo {
+            width: 45rem;
+          }
+        }
+        .company {
+          position: absolute;
+          right: 30%;
+          top: 20%;
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
-  
+}
+
+
+
+/////////////////////////////// HOME RESPONSIV ///////////////////////////////
+
+@media screen and (max-width: 767.98px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    .titleImg {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      .titleText {
+        text-align: center;
+        top: 35%;
+        left: 30%;
+        transform: translate(-30%, -35%);
+        .beeTitle {
+          width: 100%;
+          margin-bottom: 5rem;
+        }
+      }
+      .beekeeper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 65%;
+        left: 30%;
+        transform: translate(-30%);
+        .beekeperLogo {
+          background-color: #d6d1f3;
+          border-radius: 50%;
+          padding: 8rem;
+          .brun {
+            position: relative;
+            right: 30%;
+            img {
+              width: 20rem;
+              &:hover {
+                transform: rotate(-30deg);
+                transition: 0.4s;
+              }
+            }
+            .blond {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              img {
+                width: 25rem;
+                &:hover {
+                  transform: rotate(30deg);
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+        }
+        .beekeperTitle {
+          margin: 0 auto;
+          padding-top: 2rem;
+          a {
+            color: #6b6b6b;
+          }
+        }
+      }
+    }
+  }
+}
