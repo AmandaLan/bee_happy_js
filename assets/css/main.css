@@ -241,14 +241,14 @@ nav .burger {
   }
 }
 footer {
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 footer .network {
   display: flex;
   justify-content: space-around;
 }
 footer .network a img {
-  width: 17rem;
+  width: 12rem;
 }
 footer .network a .facebook {
   animation-duration: 2s;
@@ -263,8 +263,8 @@ footer .network a .insta {
   animation-direction: alternate;
 }
 footer .footerBG img {
-  width: 190rem;
-  margin: auto;
+  width: 98.8vw;
+  margin: 0 auto;
 }
 
 * {
@@ -382,8 +382,8 @@ body p, body a {
   position: absolute;
   align-items: center;
   top: 55%;
-  right: 50%;
-  transform: translate(50%);
+  left: 35%;
+  transform: translate(-50%);
 }
 .title .titleImg .honey .bigbug {
   position: relative;
@@ -391,8 +391,7 @@ body p, body a {
   justify-content: space-around;
 }
 .title .titleImg .honey .bigbug .bug {
-  width: 152rem;
-  margin: 0 auto;
+  min-width: 99vw;
 }
 .title .titleImg .honey .bigbug .honeyCube {
   background-color: #fff9e3;

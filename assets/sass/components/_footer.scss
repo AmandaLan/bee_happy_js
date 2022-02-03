@@ -18,13 +18,13 @@
   }
 
 footer {
-  margin-top: 20rem;
+  margin-top: 10rem;
   .network {
     display: flex;
     justify-content: space-around;
     a {
       img {
-        width: 17rem;
+        width: 12rem;
       }
       .facebook {
         animation-duration: 2s;
@@ -41,9 +41,10 @@ footer {
     }
   }
   .footerBG {
+
     img {
-      width: 190rem;
-      margin: auto;
+      width: 98.8vw;
+      margin: 0 auto;
     }
   }
 }

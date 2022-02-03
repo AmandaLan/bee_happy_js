@@ -70,15 +70,14 @@
       position: absolute;
       align-items: center;
       top: 55%;
-      right: 50%;
-      transform: translate(50%);
+      left: 35%;
+      transform: translate(-50%);
       .bigbug {
         position: relative;
         display: flex;
         justify-content: space-around;
         .bug {
-          width: 152rem;
-          margin: 0 auto;
+          min-width: 99vw;
         }
         .honeyCube {
           background-color: #fff9e3;
