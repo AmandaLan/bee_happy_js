@@ -1,3 +1,7 @@
+.beekeeperLogoDark {
+  background-color: #68579a;
+}
+
 /////////////////////////////// HOME ///////////////////////////////
 
 .title {
@@ -28,6 +32,7 @@
       background-color: #d6d1f3;
       border-radius: 50%;
       padding: 8rem;
+      transition: transform 2s ease;
       .brun {
         position: relative;
         right: 30%;
@@ -54,6 +59,11 @@
     }
     .beekeepertitleShow {
       transform: translateX(0);
+      margin-left: 20rem;
+      transition: transform 2s ease;
+      a {
+        color: #6b6b6b;
+      }
     }
     .beekeeper {
       position: absolute;
@@ -69,7 +79,7 @@
         padding: 8rem;
 
         transform: translateX(-200%);
-        transition: transform 0.4s ease;
+        transition: transform 2s ease;
         .brun {
           position: relative;
           right: 30%;

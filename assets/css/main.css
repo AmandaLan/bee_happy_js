@@ -304,6 +304,17 @@ html {
   font-size: 62.5%;
 }
 
+.darkMode {
+  background: #503958;
+  color: white;
+}
+.darkMode h5 {
+  color: white;
+}
+.darkMode p, .darkMode a {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -344,6 +355,10 @@ body p, body a {
   text-decoration: none;
 }
 
+.beekeeperLogoDark {
+  background-color: #68579a;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -371,6 +386,7 @@ body p, body a {
   background-color: #d6d1f3;
   border-radius: 50%;
   padding: 8rem;
+  transition: transform 2s ease;
 }
 .title .titleImg .beekeeperShow .brun {
   position: relative;
@@ -397,6 +413,11 @@ body p, body a {
 }
 .title .titleImg .beekeepertitleShow {
   transform: translateX(0);
+  margin-left: 20rem;
+  transition: transform 2s ease;
+}
+.title .titleImg .beekeepertitleShow a {
+  color: #6b6b6b;
 }
 .title .titleImg .beekeeper {
   position: absolute;
@@ -411,7 +432,7 @@ body p, body a {
   border-radius: 50%;
   padding: 8rem;
   transform: translateX(-200%);
-  transition: transform 0.4s ease;
+  transition: transform 2s ease;
 }
 .title .titleImg .beekeeper .beekeperLogo .brun {
   position: relative;

@@ -12,13 +12,29 @@ burgerMenu();
 //////////////////////////// BEEKEEPER ANIMATION ///////////////////////////////////////////
 
 function beekeeper() {
-  const beekeeperLogo = document.querySelector(".beekeeperLogo");
+  let beekeeperLogo = document.getElementById("beekeperLogo");
+  let beekeepertitle = document.getElementById("beekeperTitle");
+  console.log(beekeeperLogo);
   window.addEventListener("scroll", () => {
     //   alert(window.scrollY);
-    beekeeperLogo.classList.add("beekeeperShow");
+    // beekeeperLogo.classList.remove("beekeperLogo");
+    // beekeeperLogo.classList.add("beekeeperShow");
+    // console.log(beekeeperLogo);
+    if (window.scrollY > 150) {
+      beekeeperLogo.classList.remove("beekeperLogo");
+      beekeeperLogo.classList.add("beekeeperShow");
+      beekeepertitle.classList.remove("beekeperTitle");
+      beekeepertitle.classList.add("beekeepertitleShow");
+      console.log(beekeeperLogo);
+    } else {
+      beekeeperLogo.classList.remove("beekeeperShow");
+      beekeeperLogo.classList.add("beekeperLogo");
+      beekeepertitle.classList.remove("beekeepertitleShow");
+      beekeepertitle.classList.add("beekeperTitle");
+    }
   });
 }
-
+beekeeper();
 // window.addEventListener("scroll", checkBeekeeper);
 
 // function checkBeekeeper() {
@@ -36,3 +52,16 @@ function beekeeper() {
 //       }
 //   })
 // }
+//////////////////////////// DARK MODE ///////////////////////////////////////////
+
+const beekeeperBG = document.getElementById("beekeperLogo");
+console.log(beekeeperBG);
+const dark = document.getElementById("dark");
+
+dark.addEventListener("click", () => {
+  console.log("dark");
+  document.body.classList.toggle("darkMode");
+  beekeeperBG.classList.remove("beekeperLogo");
+  beekeeperBG.classList.add("beekeeperLogoDark");
+  console.log(beekeeperBG);
+});

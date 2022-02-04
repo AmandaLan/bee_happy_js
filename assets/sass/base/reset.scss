@@ -5,7 +5,17 @@
   html {
     font-size: 62.5%;
   }
-  
+  .darkMode {
+    background: #503958;
+    color: white;
+    h5 {
+      color: white;
+    }
+    p, a {
+      color: white;
+    }
+
+  }
   body {
     margin: 0;
     padding: 0;
