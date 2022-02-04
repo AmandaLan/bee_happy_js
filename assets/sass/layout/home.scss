@@ -1,5 +1,5 @@
 .beekeeperLogoDark {
-  background-color: #68579a;
+  background-color: #473a6d;
 }
 
 /////////////////////////////// HOME ///////////////////////////////
@@ -124,8 +124,10 @@
         position: relative;
         display: flex;
         justify-content: space-around;
+        z-index: -240;
         .bug {
           min-width: 100vw;
+          
         }
         .honeyCube {
           background-color: #fff9e3;

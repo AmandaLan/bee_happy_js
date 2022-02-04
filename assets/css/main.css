@@ -305,7 +305,7 @@ html {
 }
 
 .darkMode {
-  background: #503958;
+  background: #38253f;
   color: white;
 }
 .darkMode h5 {
@@ -356,7 +356,7 @@ body p, body a {
 }
 
 .beekeeperLogoDark {
-  background-color: #68579a;
+  background-color: #473a6d;
 }
 
 .title {
@@ -476,6 +476,7 @@ body p, body a {
   position: relative;
   display: flex;
   justify-content: space-around;
+  z-index: -240;
 }
 .title .titleImg .honey .bigbug .bug {
   min-width: 100vw;
