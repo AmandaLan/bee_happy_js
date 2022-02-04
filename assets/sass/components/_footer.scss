@@ -4,27 +4,45 @@
   }
 
   to {
-    transform: translateY(8rem) rotate(80deg) ;
+    transform: translateY(12rem) rotate(80deg);
   }
 }
 @keyframes facebook {
-    from {
-      transform: translateY( 20rem) rotate(-20deg);
-    }
-  
-    to {
-      transform: translateY(-5rem) rotate(-80deg) ;
-    }
+  from {
+    transform: translateY(20rem) rotate(-20deg);
   }
 
+  to {
+    transform: translateY(-5rem) rotate(-80deg);
+  }
+}
+@keyframes mail {
+  from {
+    transform: translateY(12rem) rotate(0);
+  }
+
+  to {
+    transform: translateY(-8rem) rotate(-80deg);
+  }
+}
+@keyframes in {
+  from {
+    transform: translateY(-6rem) rotate(-20deg);
+  }
+
+  to {
+    transform: translateY(6rem) rotate(80deg);
+  }
+}
+
 footer {
-  margin-top: 10rem;
+  margin-top: 20rem;
   .network {
     display: flex;
     justify-content: space-around;
     a {
       img {
-        width: 12rem;
+        width: 14rem;
       }
       .facebook {
         animation-duration: 2s;
@@ -38,12 +56,26 @@ footer {
         animation-iteration-count: infinite;
         animation-direction: alternate;
       }
+      .mail {
+        animation-duration: 2s;
+        animation-name: mail;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      .linkedin {
+        animation-duration: 2s;
+        animation-name: in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
     }
   }
   .footerBG {
-
     img {
-      width: 98.8vw;
+      width: 100vw;
+      // height: 30rem;
+      // object-fit: cover;
+      // background-position: bottom;
       margin: 0 auto;
     }
   }
