@@ -14,7 +14,6 @@ burgerMenu();
 function beekeeper() {
   let beekeeperLogo = document.getElementById("beekeperLogo");
   let beekeepertitle = document.getElementById("beekeperTitle");
-  console.log(beekeeperLogo);
   window.addEventListener("scroll", () => {
     //   alert(window.scrollY);
     // beekeeperLogo.classList.remove("beekeperLogo");
@@ -25,7 +24,6 @@ function beekeeper() {
       beekeeperLogo.classList.add("beekeeperShow");
       beekeepertitle.classList.remove("beekeperTitle");
       beekeepertitle.classList.add("beekeepertitleShow");
-      console.log(beekeeperLogo);
     } else {
       beekeeperLogo.classList.remove("beekeeperShow");
       beekeeperLogo.classList.add("beekeperLogo");
@@ -101,5 +99,20 @@ dark.addEventListener("click", () => {
   console.log(beekeeperBG);
 });
 
-//////////////////DRAGABLE//////////////////////
+//////////////////beeFly//////////////////////
 
+function beefly() {
+  let beeflyImg = document.getElementById("beeflyImg");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 2500) {
+      console.log(scrollY);
+      beeflyImg.classList.remove("beeflyImg");
+      beeflyImg.classList.add("beeflyImgShow");
+      console.log(beeflyImg);
+    } else {
+      beeflyImg.classList.remove("beeflyImgShow");
+      beeflyImg.classList.add("beeflyImg");
+    }
+  });
+}
+beefly();

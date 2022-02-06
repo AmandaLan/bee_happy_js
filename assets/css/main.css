@@ -163,6 +163,27 @@ nav .burger {
     transform: rotate(-45deg);
   }
 }
+@keyframes fly {
+  0% {
+    transform: translateX(-300%);
+  }
+  30% {
+    transform: translateX(-200%) translateY(20%);
+  }
+  68% {
+    transform: translateX(50%) translateY(-20%);
+  }
+  100% {
+    transform: translateX(380%) translateY(30%);
+  }
+}
+.beeflyImgShow {
+  animation-duration: 2s;
+  animation-name: fly;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .beeBG {
   position: relative;
 }
@@ -180,6 +201,10 @@ nav .burger {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.beeBG .beeFly .beeflyImg {
+  transform: translateX(-300%);
+  transition: transform 2s ease;
 }
 .beeBG .beeFly h2 {
   color: white;
