@@ -44,5 +44,97 @@
   h2 {
     color: #d6d1f3;
     margin: 6rem;
+    font-size: 8rem;
+  }
+}
+///////////////////////////////CONTACT DARK///////////////////////////////////////
+.contactDark {
+  background-color: #68579A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  form {
+    margin: 6rem;
+    .name {
+      display: flex;
+    }
+    .champs {
+        padding: 3rem 6rem 0 6rem;
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 1rem;
+      }
+    }
+    label {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 3rem;
+      padding: 2rem;
+    }
+    .submit {
+      display: flex;
+      justify-content: center;
+      input {
+        cursor: pointer;
+        border: none;
+        width: 20%;
+        color: #68579A;
+        background-color: white;
+        margin-top: 6rem;
+        padding: 1.5rem;
+        border-radius: 3rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  h2 {
+    color: #d6d1f3;
+    margin: 6rem;
+    font-size: 8rem;
+  }
+}
+////////////////////RESPONSIV//////////////////
+@media screen and (max-width: 767.98px) {
+  .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    form {
+      label {
+        font-size: 2rem;
+      }
+      .submit {
+        input {
+          font-size: 2rem;
+        }
+      }
+    }
+    h2 {
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+  }
+  .contactDark {
+    background-color: #68579A;
+    flex-direction: column-reverse;
+    align-items: center;
+    form {
+      label {
+        font-size: 2rem;
+      }
+      .submit {
+        input {
+          font-size: 2rem;
+        }
+      }
+    }
+    h2 {
+      margin: 0 auto;
+      font-size: 2rem;
+    }
   }
 }

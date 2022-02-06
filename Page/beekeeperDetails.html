@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Plaster&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>Bee Happy</title>
+  </head>
+  <body onload="move('beekeeperDetail')">
+    <header>
+      <nav>
+        <div class="beekeeperNav">
+          <img src="../assets/img/alveolUni.png" alt="" />
+          <div class="homeBtn">
+            <a href="../index.html"><p>Home</p></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="beekeeperDetails">
+        <div class="beekeeperDetail" id="beekeeperDetail">
+          <div class="beekeeperInfos">
+            <img src="../assets/img/beekeeperAlveol.png" alt="" />
+            <div class="beekeeperInfo">
+              <h1>Beekeeper</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam, repellat quos? Cupiditate, necessitatibus quas aperiam
+                nulla perferendis sequi, tenetur corporis, natus error quaerat
+                provident autem rerum recusandae omnis odio adipisci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      //////////////////////DRAGABLE/////////////////
+      let dragValue = 0;
+
+      function move(id) {
+        let element = document.getElementById("beekeeperDetail");
+        element.style.position = "absolute";
+        element.onmousedown = function () {
+          dragValue = element;
+        };
+      }
+      document.onmousemove = function (e) {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        dragValue.style.left = x + "px";
+        dragValue.style.top = y + "px";
+      };
+      document.onmouseup = function() {
+        dragValue = 0;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.beekeeperNav {
+  position: relative;
+  margin-top: 10rem;
+  img {
+    width: 15rem;
+  }
+  .homeBtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    a {
+      p {
+        font-size: 3rem;
+        color: #f8d41a;
+      }
+    }
+  }
+}
+
+.beekeeperDetails {
+    display: flex;
+  .beekeeperDetail {
+    display: flex;
+    justify-content: center;
+    margin-top: 25rem;
+    cursor: move;
+    .beekeeperInfos {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 20%;
+      }
+      .beekeeperInfo {
+        position: absolute;
+        text-align: center;
+        padding: 10rem;
+        h1 {
+          color: white;
+          font-size: 2rem;
+        }
+        p {
+          color: white;
+          font-size: 1rem;
+          width: 20rem;
+        }
+      }
+      &:hover {
+        transition: 1s;
+        img {
+          width: 40%;
+        }
+        .beekeeperInfo {
+          position: absolute;
+          text-align: center;
+          padding: 12rem;
+          h1 {
+            color: white;
+            font-size: 4rem;
+          }
+          p {
+            color: white;
+            font-size: 2rem;
+            width: 40rem;
+          }
+        }
+      }
+    }
+  }
+}

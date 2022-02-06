@@ -1,6 +1,60 @@
 .beeBG {
+  position: relative;
+  .bg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bgDark {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .beeFly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      color: white;
+      font-size: 6rem;
+    }
+  }
+}
+////////////////////////////////////////DARK MODE////////////////////////////////////
+.beeBGDark {
+  position: relative;
+  .bg {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bgDark {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .beeFly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      color: white;
+
+      font-size: 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .beeBG {
     position: relative;
+    margin-top: 40rem;
     .bg {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .bgDark {
+      display: none;
       width: 100%;
       margin: 0 auto;
     }
@@ -9,8 +63,40 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      img {
+        width: 10rem;
+      }
       h2 {
         color: white;
+        font-size: 2rem;
       }
     }
   }
+  .beeBGDark {
+    position: relative;
+
+    margin-top: 25rem;
+    .bg {
+      display: none;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .bgDark {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .beeFly {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      img {
+        width: 10rem;
+      }
+      h2 {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+  }
+}

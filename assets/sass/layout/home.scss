@@ -1,5 +1,17 @@
-.beekeeperLogoDark {
-  background-color: #473a6d;
+.honeyCubeDark {
+  background-color: #68579a;
+  padding: 10rem;
+  position: absolute;
+  text-align: center;
+  right: 50%;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5rem;
+  .honeyLogo {
+    width: 45rem;
+  }
 }
 
 /////////////////////////////// HOME ///////////////////////////////
@@ -22,6 +34,12 @@
       top: 0;
       right: 50%;
       width: 60%;
+      h5 {
+        font-size: 2.5rem;
+      }
+      h1 {
+        font-size: 8rem;
+      }
       .beeTitle {
         width: 60%;
       }
@@ -58,12 +76,9 @@
       }
     }
     .beekeepertitleShow {
-      transform: translateX(0);
+      transform: translateX(-20%);
       margin-left: 20rem;
       transition: transform 2s ease;
-      a {
-        color: #6b6b6b;
-      }
     }
     .beekeeper {
       position: absolute;
@@ -109,7 +124,7 @@
         transform: translateX(180%);
         transition: transform 0.4s ease;
         a {
-          color: #6b6b6b;
+          color: #adadad;
         }
       }
     }
@@ -127,7 +142,6 @@
         z-index: -240;
         .bug {
           min-width: 100vw;
-          
         }
         .honeyCube {
           background-color: #fff9e3;
@@ -142,13 +156,19 @@
           border-radius: 5rem;
           .honeyLogo {
             width: 45rem;
+            h2 {
+              font-size: 5rem;
+            }
           }
         }
         .company {
           position: absolute;
-          right: 25%;
+          right: 15%;
           top: 20%;
           transform: rotate(90deg);
+          h5 {
+            font-size: 2.5rem;
+          }
         }
       }
     }
@@ -158,9 +178,10 @@
 /////////////////////////////// HOME RESPONSIV ///////////////////////////////
 
 @media screen and (max-width: 767.98px) {
+
   .title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 10%;
     .titleImg {
       display: flex;
@@ -179,7 +200,6 @@
         }
       }
       .beekeeper {
-        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,11 +235,55 @@
             }
           }
         }
-        .beekeperTitle {
-          margin: 0 auto;
-          padding-top: 2rem;
-          a {
-            color: #6b6b6b;
+      }
+      /////////////////////HONEY///////////////////
+      .honey {
+        align-items: center;
+        top: 100%;
+        left: 15%;
+        transform: translate(-50%);
+        .bigbug {
+          .bug {
+            min-width: 100vw;
+          }
+          .honeyCube {
+            background-color: #fff9e3;
+            padding: 10rem;
+            text-align: center;
+            left: 10%;
+            top: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            border-radius: 5rem;
+            .honeyLogo {
+              width: 25rem;
+              h2 {
+                font-size: 2rem;
+              }
+            }
+          }
+          .honeyCubeDark {
+            padding: 10rem;
+            text-align: center;
+            left: 10%;
+            top: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            border-radius: 5rem;
+            .honeyLogo {
+              width: 25rem;
+              h2 {
+                font-size: 2rem;
+              }
+            }
+          }
+
+          .company {
+            right: -25%;
+            top: 30%;
+            transform: rotate(90deg);
           }
         }
       }

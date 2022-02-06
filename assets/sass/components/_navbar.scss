@@ -6,6 +6,15 @@ nav {
     justify-content: space-between;
     padding: 4rem;
     height: 65px;
+    .darkModeToggle {
+        .darkMode {
+            background-color: transparent;
+            p{
+                color: black;
+                margin-left: 4.5rem;
+            }
+        }
+    }
     /////////////////BURGER////////////////////////////
     .navigation {
         display: flex;
@@ -67,9 +76,6 @@ nav {
             }
           }
         }
-    }
-    .darkMode {
-        margin-left: 5rem;
     }
     .burger {
         display: none;

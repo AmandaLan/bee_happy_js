@@ -55,13 +55,51 @@ beekeeper();
 //////////////////////////// DARK MODE ///////////////////////////////////////////
 
 const beekeeperBG = document.getElementById("beekeperLogo");
-console.log(beekeeperBG);
+const honeyBG = document.getElementById("honeyCube");
+const beeBG = document.getElementById("beeBG");
+const contact = document.getElementById("contact");
 const dark = document.getElementById("dark");
+let darkMode = localStorage.getItem("darkMode");
+
+const enableDarkMode = () => {
+  document.body.classList.add("darkMode");
+  localStorage.setItem("darkMode", "enabled");
+
+  honeyBG.classList.remove("honeyCube");
+  honeyBG.classList.add("honeyCubeDark");
+  beeBG.classList.remove("beeBG");
+  beeBG.classList.add("beeBGDark");
+  contact.classList.remove("contact");
+  contact.classList.add("contactDark");
+};
+const disableDarkMode = () => {
+  document.body.classList.remove("darkMode");
+  localStorage.setItem("darkMode", null);
+
+  honeyBG.classList.remove("honeyCubeDark");
+  honeyBG.classList.add("honeyCube");
+  beeBG.classList.remove("beeBGDark");
+  beeBG.classList.add("beeBG");
+  contact.classList.remove("contactDark");
+  contact.classList.add("contact");
+};
 
 dark.addEventListener("click", () => {
-  console.log("dark");
-  document.body.classList.toggle("darkMode");
-  beekeeperBG.classList.remove("beekeperLogo");
-  beekeeperBG.classList.add("beekeeperLogoDark");
+  // document.body.classList.toggle("darkMode");
+  /*   beekeeperBG.classList.remove("beekeperLogo");
+  beekeeperBG.classList.remove("beekeeperShow");
+  beekeeperBG.classList.add("beekeeperLogoDark"); */
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+    console.log(darkMode);
+  } else {
+    disableDarkMode();
+    console.log(darkMode);
+  }
+
   console.log(beekeeperBG);
 });
+
+//////////////////DRAGABLE//////////////////////
+

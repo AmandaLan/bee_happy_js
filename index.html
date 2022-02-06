@@ -19,20 +19,20 @@
     <header>
       <nav class="navbar">
         <div class="logo"><h4>Bee Happy</h4></div>
-        <div>
+        <div class="darkModeToggle">
           <div class="switch">
             <label class="toggle">
               <input type="checkbox" id="dark"/>
               <span class="slider"></span>
             </label>
           </div>
-          <div class="darkMode">Dark Mode</div>
+          <div class="darkMode"><p>Dark Mode</p></div>
         </div>
         <ul class="navigation">
-          <li class="navLink one"><a href="">Home</a></li>
-          <li class="navLink two"><a href="">BeeKeeper</a></li>
-          <li class="navLink three"><a href="">Honey</a></li>
-          <li class="navLink four"><a href="">contact</a></li>
+          <li class="navLink one"><a href="index.html">Home</a></li>
+          <li class="navLink two"><a href="#beekeeper">BeeKeeper</a></li>
+          <li class="navLink three"><a href="#honey">Honey</a></li>
+          <li class="navLink four"><a href="#contact">contact</a></li>
         </ul>
         <button class="burger">
           <span class="bar"></span>
@@ -56,7 +56,7 @@
             </p>
           </div>
           <!-- BEEKEEPER PART -->
-          <div class="beekeeper">
+          <div class="beekeeper" id="beekeeper">
             <div class="beekeperLogo" id="beekeperLogo">
               <div class="brun">
                 <img src="./assets/img/person01.png" alt="" />
@@ -66,17 +66,17 @@
               </div>
             </div>
             <div class="beekeperTitle" id="beekeperTitle">
-              <a href=""><h2>Beekeeper</h2></a>
+              <a href="./Page/beekeeperDetails.html"><h6>Beekeeper</h6></a>
             </div>
           </div>
 
           <!-- HONEY PART -->
-          <div class="honey">
+          <div class="honey" id="honey">
             <div class="bigbug">
-              <div class="honeyCube">
+              <div class="honeyCube" id="honeyCube">
                 <div class="honeyLogo">
                   <img src="./assets/img/honey.png" alt="" />
-                  <h2>Sweet Honney</h2>
+                  <h2>Sweet Honey</h2>
                 </div>
               </div>
               <div class="company">
@@ -92,15 +92,16 @@
       </div>
 
       <!-- BEE FLY PART -->
-      <div class="beeBG">
+      <div class="beeBG" id="beeBG">
         <img class="bg" src="./assets/img/beeBG.png" alt="" />
+        <img class="bgDark" src="./assets/img/beeBGDark.png" alt="" />
         <div class="beeFly">
           <h2>Fly With Me</h2>
-          <img src="./assets/img/beefly.png" alt="" />
+          <img id="beeflyImg" src="./assets/img/beefly.png" alt="" />
         </div>
       </div>
       <!-- CONTACT PART -->
-      <div class="contact">
+      <div class="contact" id="contact">
         <form action="">
           <div class="name">
             <div class="champs">
@@ -128,7 +129,7 @@
             <input type="submit" value="Submit" />
           </div>
         </form>
-        <div>
+        <div class="contactUs">
           <h2>Contact Us</h2>
         </div>
       </div>
