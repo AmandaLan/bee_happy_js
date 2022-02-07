@@ -15,10 +15,6 @@ function beekeeper() {
   let beekeeperLogo = document.getElementById("beekeperLogo");
   let beekeepertitle = document.getElementById("beekeperTitle");
   window.addEventListener("scroll", () => {
-    //   alert(window.scrollY);
-    // beekeeperLogo.classList.remove("beekeperLogo");
-    // beekeeperLogo.classList.add("beekeeperShow");
-    // console.log(beekeeperLogo);
     if (window.scrollY > 150) {
       beekeeperLogo.classList.remove("beekeperLogo");
       beekeeperLogo.classList.add("beekeeperShow");
@@ -57,6 +53,7 @@ const honeyBG = document.getElementById("honeyCube");
 const beeBG = document.getElementById("beeBG");
 const contact = document.getElementById("contact");
 const dark = document.getElementById("dark");
+const darkModeBTN = document.getElementById("darkModeBTN")
 let darkMode = localStorage.getItem("darkMode");
 
 const enableDarkMode = () => {
@@ -69,6 +66,8 @@ const enableDarkMode = () => {
   beeBG.classList.add("beeBGDark");
   contact.classList.remove("contact");
   contact.classList.add("contactDark");
+  darkModeBTN.classList.remove("darkModeBTN");
+  darkModeBTN.classList.add("darkModeBTNDark");
 };
 const disableDarkMode = () => {
   document.body.classList.remove("darkMode");
@@ -80,23 +79,18 @@ const disableDarkMode = () => {
   beeBG.classList.add("beeBG");
   contact.classList.remove("contactDark");
   contact.classList.add("contact");
+  darkModeBTN.classList.remove("darkModeBTNDark");
+  darkModeBTN.classList.add("darkModeBTN");
 };
 
 dark.addEventListener("click", () => {
-  // document.body.classList.toggle("darkMode");
-  /*   beekeeperBG.classList.remove("beekeperLogo");
-  beekeeperBG.classList.remove("beekeeperShow");
-  beekeeperBG.classList.add("beekeeperLogoDark"); */
   darkMode = localStorage.getItem("darkMode");
   if (darkMode !== "enabled") {
     enableDarkMode();
-    console.log(darkMode);
   } else {
     disableDarkMode();
-    console.log(darkMode);
   }
 
-  console.log(beekeeperBG);
 });
 
 //////////////////beeFly//////////////////////
@@ -105,10 +99,8 @@ function beefly() {
   let beeflyImg = document.getElementById("beeflyImg");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 2500) {
-      console.log(scrollY);
       beeflyImg.classList.remove("beeflyImg");
       beeflyImg.classList.add("beeflyImgShow");
-      console.log(beeflyImg);
     } else {
       beeflyImg.classList.remove("beeflyImgShow");
       beeflyImg.classList.add("beeflyImg");

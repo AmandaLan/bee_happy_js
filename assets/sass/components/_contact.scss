@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   form {
-    margin: 6rem;
     .name {
       display: flex;
     }
@@ -98,7 +98,7 @@
   }
 }
 ////////////////////RESPONSIV//////////////////
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1200px) {
   .contact {
     display: flex;
     flex-direction: column-reverse;

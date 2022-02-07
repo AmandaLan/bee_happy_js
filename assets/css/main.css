@@ -1,16 +1,29 @@
+.darkModeBTNDark {
+  background-color: transparent;
+}
+.darkModeBTNDark p {
+  color: white;
+  margin-left: 4.5rem;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 6rem;
   height: 65px;
 }
-nav .darkModeToggle .darkMode {
+nav .logo {
+  font-size: 3rem;
+}
+nav .darkModeToggle .darkModeBTN {
   background-color: transparent;
 }
-nav .darkModeToggle .darkMode p {
+nav .darkModeToggle .darkModeBTN p {
   color: black;
   margin-left: 4.5rem;
+  font-size: 2rem;
+  align-items: center;
 }
 nav .navigation {
   display: flex;
@@ -20,6 +33,7 @@ nav .navigation .navLink {
   padding: 0 2rem;
 }
 nav .navigation .navLink a {
+  font-size: 2.5rem;
   text-decoration: none;
 }
 nav .navigation .navLink a:after {
@@ -186,15 +200,15 @@ nav .burger {
 
 .beeBG {
   position: relative;
+  margin: -2rem auto;
+  width: 100vw;
 }
 .beeBG .bg {
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
 }
 .beeBG .bgDark {
   display: none;
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
 }
 .beeBG .beeFly {
   position: absolute;
@@ -213,15 +227,15 @@ nav .burger {
 
 .beeBGDark {
   position: relative;
+  margin: -2rem auto;
+  width: 100vw;
 }
 .beeBGDark .bg {
   display: none;
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
 }
 .beeBGDark .bgDark {
-  width: 100%;
-  margin: 0 auto;
+  width: 100vw;
 }
 .beeBGDark .beeFly {
   position: absolute;
@@ -229,33 +243,42 @@ nav .burger {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.beeBGDark .beeFly .beeflyImg {
+  transform: translateX(-300%);
+}
 .beeBGDark .beeFly h2 {
   color: white;
   font-size: 6rem;
 }
 
-@media screen and (max-width: 767.98px) {
-  .beeBG {
-    position: relative;
-    margin-top: 40rem;
+@media screen and (max-width: 1200px) {
+  @keyframes flyRes {
+    0% {
+      transform: translateX(-300%);
+    }
+    30% {
+      transform: translateX(-200%) translateY(20%);
+    }
+    68% {
+      transform: translateX(50%) translateY(-20%);
+    }
+    100% {
+      transform: translateX(380%);
+    }
   }
-  .beeBG .bg {
-    width: 100%;
-    margin: 0 auto;
+  .beeBG {
+    margin-top: 40rem;
+    position: relative;
   }
   .beeBG .bgDark {
     display: none;
-    width: 100%;
-    margin: 0 auto;
   }
-  .beeBG .beeFly {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .beeBG .beeFly img {
+  .beeBG .beeFly .beeflyImg {
     width: 10rem;
+    animation-duration: 2s;
+    animation-name: flyRes;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   .beeBG .beeFly h2 {
     color: white;
@@ -264,25 +287,21 @@ nav .burger {
 
   .beeBGDark {
     position: relative;
-    margin-top: 25rem;
+    margin-top: 40rem;
   }
   .beeBGDark .bg {
     display: none;
-    width: 100%;
-    margin: 0 auto;
   }
   .beeBGDark .bgDark {
     width: 100%;
     margin: 0 auto;
   }
-  .beeBGDark .beeFly {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .beeBGDark .beeFly img {
+  .beeBGDark .beeFly .beeflyImg {
     width: 10rem;
+    animation-duration: 2s;
+    animation-name: flyRes;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   .beeBGDark .beeFly h2 {
     color: white;
@@ -295,9 +314,7 @@ nav .burger {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-.contact form {
-  margin: 6rem;
+  width: 100vw;
 }
 .contact form .name {
   display: flex;
@@ -389,7 +406,7 @@ nav .burger {
   font-size: 8rem;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1200px) {
   .contact {
     display: flex;
     flex-direction: column-reverse;
@@ -511,6 +528,9 @@ html {
 .darkMode p, .darkMode a {
   color: white;
 }
+.darkMode h6 {
+  color: white;
+}
 
 body {
   margin: 0;
@@ -550,6 +570,7 @@ body h6 {
   font-family: "Plaster", cursive;
   margin: 0;
   font-size: 5rem;
+  color: #6B6B6B;
 }
 
 .honeyCubeDark {
@@ -558,7 +579,7 @@ body h6 {
   position: absolute;
   text-align: center;
   right: 50%;
-  top: 5%;
+  top: 20%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -567,11 +588,14 @@ body h6 {
 .honeyCubeDark .honeyLogo {
   width: 45rem;
 }
+.honeyCubeDark .honeyLogo h2 {
+  font-size: 5rem;
+}
 
 .title {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 14%;
 }
 .title .titleImg {
   position: relative;
@@ -674,13 +698,10 @@ body h6 {
   transform: translateX(180%);
   transition: transform 0.4s ease;
 }
-.title .titleImg .beekeeper .beekeperTitle a {
-  color: #adadad;
-}
 .title .titleImg .honey {
   position: absolute;
   align-items: center;
-  top: 55%;
+  top: 45%;
   left: 35%;
   transform: translate(-50%);
 }
@@ -688,7 +709,6 @@ body h6 {
   position: relative;
   display: flex;
   justify-content: space-around;
-  z-index: -240;
 }
 .title .titleImg .honey .bigbug .bug {
   min-width: 100vw;
@@ -699,7 +719,7 @@ body h6 {
   position: absolute;
   text-align: center;
   right: 50%;
-  top: 5%;
+  top: 20%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -714,14 +734,14 @@ body h6 {
 .title .titleImg .honey .bigbug .company {
   position: absolute;
   right: 15%;
-  top: 20%;
+  top: 33%;
   transform: rotate(90deg);
 }
 .title .titleImg .honey .bigbug .company h5 {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1200px) {
   .title {
     display: flex;
     flex-direction: column;
@@ -849,11 +869,11 @@ body h6 {
 
 .beekeeperDetails {
   display: flex;
+  justify-content: end;
 }
 .beekeeperDetails .beekeeperDetail {
   display: flex;
   justify-content: center;
-  margin-top: 25rem;
   cursor: move;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos {
@@ -863,12 +883,11 @@ body h6 {
   align-items: center;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos img {
-  width: 20%;
+  width: 200px;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos .beekeeperInfo {
   position: absolute;
   text-align: center;
-  padding: 10rem;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos .beekeeperInfo h1 {
   color: white;
@@ -877,18 +896,13 @@ body h6 {
 .beekeeperDetails .beekeeperDetail .beekeeperInfos .beekeeperInfo p {
   color: white;
   font-size: 1rem;
-  width: 20rem;
-}
-.beekeeperDetails .beekeeperDetail .beekeeperInfos:hover {
-  transition: 1s;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos:hover img {
-  width: 40%;
+  width: 400px;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos:hover .beekeeperInfo {
   position: absolute;
   text-align: center;
-  padding: 12rem;
 }
 .beekeeperDetails .beekeeperDetail .beekeeperInfos:hover .beekeeperInfo h1 {
   color: white;
@@ -897,7 +911,6 @@ body h6 {
 .beekeeperDetails .beekeeperDetail .beekeeperInfos:hover .beekeeperInfo p {
   color: white;
   font-size: 2rem;
-  width: 40rem;
 }
 
 /*# sourceMappingURL=main.css.map */

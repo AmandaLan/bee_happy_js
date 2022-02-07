@@ -1,17 +1,30 @@
 /////////////////////////////// NAVBAR ///////////////////////////////
 
+.darkModeBTNDark {
+    background-color: transparent;
+    p{
+        color: white;
+        margin-left: 4.5rem;
+    }
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 6rem;
     height: 65px;
+    .logo {
+        font-size: 3rem;
+    }
     .darkModeToggle {
-        .darkMode {
+        .darkModeBTN {
             background-color: transparent;
             p{
                 color: black;
                 margin-left: 4.5rem;
+                font-size: 2rem;
+                align-items: center;
             }
         }
     }
@@ -22,6 +35,7 @@ nav {
             list-style: none;
             padding: 0 2rem;
             a {
+                font-size: 2.5rem;
                 text-decoration: none;
                 &:after {
                     display: block;
@@ -38,7 +52,8 @@ nav {
 
         }
     }
-    ///////////////////DARK MODE////////////////////////////
+    ///////////////////DARK MODE BUTTON////////////////////////////
+
     .switch {
         position: absolute;
         .toggle {

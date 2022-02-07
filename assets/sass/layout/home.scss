@@ -4,13 +4,16 @@
   position: absolute;
   text-align: center;
   right: 50%;
-  top: 5%;
+  top: 20%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   border-radius: 5rem;
   .honeyLogo {
     width: 45rem;
+    h2 {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -19,7 +22,7 @@
 .title {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 14%;
 
   .titleImg {
     position: relative;
@@ -123,23 +126,19 @@
         margin-left: 20rem;
         transform: translateX(180%);
         transition: transform 0.4s ease;
-        a {
-          color: #adadad;
-        }
       }
     }
     /////////////////////////////HONEY////////////////////////////////////////
     .honey {
       position: absolute;
       align-items: center;
-      top: 55%;
+      top: 45%;
       left: 35%;
       transform: translate(-50%);
       .bigbug {
         position: relative;
         display: flex;
         justify-content: space-around;
-        z-index: -240;
         .bug {
           min-width: 100vw;
         }
@@ -149,7 +148,7 @@
           position: absolute;
           text-align: center;
           right: 50%;
-          top: 5%;
+          top: 20%;
           width: 100%;
           display: flex;
           justify-content: flex-end;
@@ -164,7 +163,7 @@
         .company {
           position: absolute;
           right: 15%;
-          top: 20%;
+          top: 33%;
           transform: rotate(90deg);
           h5 {
             font-size: 2.5rem;
@@ -177,7 +176,7 @@
 
 /////////////////////////////// HOME RESPONSIV ///////////////////////////////
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1200px) {
 
   .title {
     display: flex;

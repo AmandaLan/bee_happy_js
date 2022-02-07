@@ -20,10 +20,10 @@
 
 .beekeeperDetails {
     display: flex;
+    justify-content: end;
   .beekeeperDetail {
     display: flex;
     justify-content: center;
-    margin-top: 25rem;
     cursor: move;
     .beekeeperInfos {
       position: relative;
@@ -31,12 +31,11 @@
       justify-content: center;
       align-items: center;
       img {
-        width: 20%;
+        width: 200px;
       }
       .beekeeperInfo {
         position: absolute;
         text-align: center;
-        padding: 10rem;
         h1 {
           color: white;
           font-size: 2rem;
@@ -44,18 +43,15 @@
         p {
           color: white;
           font-size: 1rem;
-          width: 20rem;
         }
       }
       &:hover {
-        transition: 1s;
         img {
-          width: 40%;
+          width: 400px;
         }
         .beekeeperInfo {
           position: absolute;
           text-align: center;
-          padding: 12rem;
           h1 {
             color: white;
             font-size: 4rem;
@@ -63,7 +59,6 @@
           p {
             color: white;
             font-size: 2rem;
-            width: 40rem;
           }
         }
       }

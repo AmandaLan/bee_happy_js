@@ -21,14 +21,14 @@
 }
 .beeBG {
   position: relative;
+  margin: -2rem auto;
+  width: 100vw;
   .bg {
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
   }
   .bgDark {
     display: none;
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
   }
   .beeFly {
     position: absolute;
@@ -48,20 +48,23 @@
 ////////////////////////////////////////DARK MODE////////////////////////////////////
 .beeBGDark {
   position: relative;
+  margin: -2rem auto;
+  width: 100vw;
   .bg {
     display: none;
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
   }
   .bgDark {
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
   }
   .beeFly {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    .beeflyImg {
+      transform: translateX(-300%);
+    }
     h2 {
       color: white;
 
@@ -70,26 +73,35 @@
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .beeBG {
-    position: relative;
-    margin-top: 40rem;
-    .bg {
-      width: 100%;
-      margin: 0 auto;
+@media screen and (max-width: 1200px) {
+  @keyframes flyRes {
+    0% {
+      transform: translateX(-300%);
     }
+    30% {
+      transform: translateX(-200%) translateY(20%);
+    }
+    68% {
+      transform: translateX(50%) translateY(-20%);
+    }
+    100% {
+      transform: translateX(380%);
+    }
+  }
+  .beeBG {
+    margin-top: 40rem;
+    position: relative;
+
     .bgDark {
       display: none;
-      width: 100%;
-      margin: 0 auto;
     }
     .beeFly {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      img {
+      .beeflyImg {
         width: 10rem;
+        animation-duration: 2s;
+        animation-name: flyRes;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
       h2 {
         color: white;
@@ -99,24 +111,22 @@
   }
   .beeBGDark {
     position: relative;
+    margin-top: 40rem;
 
-    margin-top: 25rem;
     .bg {
       display: none;
-      width: 100%;
-      margin: 0 auto;
     }
     .bgDark {
       width: 100%;
       margin: 0 auto;
     }
     .beeFly {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      img {
+      .beeflyImg {
         width: 10rem;
+        animation-duration: 2s;
+        animation-name: flyRes;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
       h2 {
         color: white;
