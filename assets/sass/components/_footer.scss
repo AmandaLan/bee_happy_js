@@ -4,12 +4,12 @@
   }
 
   to {
-    transform: translateY(12rem) rotate(80deg);
+    transform: translateY(25rem) rotate(80deg);
   }
 }
 @keyframes facebook {
   from {
-    transform: translateY(20rem) rotate(-20deg);
+    transform: translateY(30rem) rotate(-20deg);
   }
 
   to {
@@ -31,7 +31,7 @@
   }
 
   to {
-    transform: translateY(6rem) rotate(80deg);
+    transform: translateY(15rem) rotate(80deg);
   }
 }
 
@@ -42,7 +42,7 @@ footer {
     justify-content: space-around;
     a {
       img {
-        width: 14rem;
+        width: 16rem;
       }
       .facebook {
         animation-duration: 2s;
@@ -72,11 +72,90 @@ footer {
   }
   .footerBG {
     img {
-      width: 100vw;
-      // height: 30rem;
-      // object-fit: cover;
-      // background-position: bottom;
+      width: 100%;
       margin: 0 auto;
+    }
+  }
+}
+
+///////////////////////////FOOTER RESPONSIV////////////////////////////
+@media screen and (max-width: 1200px) {
+  @keyframes instagramRes {
+    from {
+      transform: translateY(-12rem) rotate(-20deg);
+    }
+  
+    to {
+      transform: translateY(8rem) rotate(80deg);
+    }
+  }
+  @keyframes facebookRes {
+    from {
+      transform: translateY(7rem) rotate(-20deg);
+    }
+  
+    to {
+      transform: translateY(-15rem) rotate(-80deg);
+    }
+  }
+  @keyframes mailRes {
+    from {
+      transform: translateY(5rem) rotate(0);
+    }
+  
+    to {
+      transform: translateY(-20rem) rotate(-80deg);
+    }
+  }
+  @keyframes inRes {
+    from {
+      transform: translateY(-10rem) rotate(-20deg);
+    }
+  
+    to {
+      transform: translateY(2rem) rotate(80deg);
+    }
+  }
+  footer {
+    margin-top: 20rem;
+    .network {
+      display: flex;
+      justify-content: space-around;
+      a {
+        img {
+          width: 12rem;
+        }
+        .facebook {
+          animation-duration: 2s;
+          animation-name: facebookRes;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+        .insta {
+          animation-duration: 2s;
+          animation-name: instagramRes;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+        .mail {
+          animation-duration: 2s;
+          animation-name: mailRes;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+        .linkedin {
+          animation-duration: 2s;
+          animation-name: inRes;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+      }
+    }
+    .footerBG {
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 }

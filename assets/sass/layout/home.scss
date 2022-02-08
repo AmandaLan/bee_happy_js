@@ -14,6 +14,12 @@
     h2 {
       font-size: 5rem;
     }
+    img {
+      &:hover {
+        transform: rotate(-30deg);
+        transition: 0.4s;
+      }
+    }
   }
 }
 
@@ -97,7 +103,7 @@
         padding: 8rem;
 
         transform: translateX(-200%);
-        transition: transform 2s ease;
+        transition: transform 1s ease;
         .brun {
           position: relative;
           right: 30%;
@@ -157,6 +163,12 @@
             width: 45rem;
             h2 {
               font-size: 5rem;
+            }
+            img {
+              &:hover {
+                transform: rotate(-20deg);
+                transition: 0.5s;
+              }
             }
           }
         }
@@ -223,7 +235,7 @@
             .blond {
               position: absolute;
               top: 0;
-              left: 50%;
+              left: 55%;
               img {
                 width: 25rem;
                 &:hover {
@@ -243,7 +255,7 @@
         transform: translate(-50%);
         .bigbug {
           .bug {
-            min-width: 100vw;
+            min-width: 100%;
           }
           .honeyCube {
             background-color: #fff9e3;
@@ -258,7 +270,7 @@
             .honeyLogo {
               width: 25rem;
               h2 {
-                font-size: 2rem;
+                font-size: 3.5rem;
               }
             }
           }
@@ -274,7 +286,13 @@
             .honeyLogo {
               width: 25rem;
               h2 {
-                font-size: 2rem;
+                font-size: 3.5rem;
+              }
+              img {
+                &:hover {
+                  transform: rotate(-20deg);
+                  transition: 0.5s;
+                }
               }
             }
           }

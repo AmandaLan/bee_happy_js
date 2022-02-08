@@ -25,23 +25,68 @@
       </nav>
     </header>
     <main>
-      <div class="beekeeperDetails">
-        <div class="beekeeperDetail" id="beekeeperDetail">
-          <div class="beekeeperInfos">
-            <img src="../assets/img/beekeeperAlveol.png" alt="" />
-            <div class="beekeeperInfo">
-              <h1>Beekeeper</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Magnam, repellat quos? Cupiditate, necessitatibus quas aperiam
-                nulla perferendis sequi, tenetur corporis, natus error quaerat
-                provident autem rerum recusandae omnis odio adipisci.
-              </p>
+      <div class="beekeeperContainer">
+        <div class="drag">
+          <img src="../assets/img/arrowBeekeeper.png" alt="" />
+          <p class="message">Drag Me</p>
+        </div>
+        <div class="beekeeperDetails">
+          <div class="beekeeperDetail" id="beekeeperDetail">
+            <div class="beekeeperInfos">
+              <img src="../assets/img/beekeeperAlveol.png" alt="" />
+              <div class="beekeeperInfo">
+                <h1>Jan Karlsen</h1>
+                <p>
+                  Muffin apple pie dragée pie toffee candy canes. Soufflé tart
+                  tart I love sweet roll sweet roll chocolate bar sweet roll
+                  gummi bears. Shortbread I love bear claw jujubes chupa chups
+                  pastry gummies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="beekeeperDetailTwo" id="beekeeperDetailTwo">
+            <div class="beekeeperInfosTwo">
+              <img src="../assets/img/beekeeperAlveol.png" alt="" />
+              <div class="beekeeperInfoTwo">
+                <h1>Daisy Rumble</h1>
+                <p>
+                  Tootsie roll muffin muffin lollipop sesame snaps powder sugar
+                  plum gummi bears. Chupa chups toffee topping muffin candy
+                  canes tart candy chocolate cake. Chupa chups dragée jelly
+                  beans marzipan pie bonbon sugar plum candy apple pie.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="beekeeperDetailThree" id="beekeeperDetailThree">
+            <div class="beekeeperInfosThree">
+              <img src="../assets/img/beekeeperAlveol.png" alt="" />
+              <div class="beekeeperInfoThree">
+                <h1>Corette Bler</h1>
+                <p>
+                  Gummies topping chocolate bar I love I love. Wafer cookie sweet roll chocolate chocolate bar. I love bonbon I love wafer oat cake. Jelly beans lollipop dessert donut chocolate bar jelly-o marzipan chocolate cake chocolate bar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="beekeeperDetailFour" id="beekeeperDetailFour">
+            <div class="beekeeperInfosFour">
+              <img src="../assets/img/beekeeperAlveol.png" alt="" />
+              <div class="beekeeperInfoFour">
+                <h1>Thorsten Cole</h1>
+                <p>
+                  I love gingerbread pie tootsie roll fruitcake carrot cake fruitcake. Candy I love bear claw lemon drops ice cream cheesecake. I love croissant I love chocolate bar carrot cake soufflé cupcake pie bonbon.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <footer class="footerBeekeeper">
+      <img src="../assets/img/alveol_beekeeper_page.png" alt="">
+    </footer>
     <script>
       //////////////////////DRAGABLE/////////////////
       let dragValue = 0;
@@ -52,6 +97,21 @@
         element.onmousedown = function () {
           dragValue = element;
         };
+        let elementTwo = document.getElementById("beekeeperDetailTwo");
+        elementTwo.style.position = "absolute";
+        elementTwo.onmousedown = function () {
+          dragValue = elementTwo;
+        };
+        let elementThree = document.getElementById("beekeeperDetailThree");
+        elementThree.style.position = "absolute";
+        elementThree.onmousedown = function () {
+          dragValue = elementThree;
+        };
+        let elementFour = document.getElementById("beekeeperDetailFour");
+        elementFour.style.position = "absolute";
+        elementFour.onmousedown = function () {
+          dragValue = elementFour;
+        };
       }
       document.onmousemove = function (e) {
         let x = e.pageX;
@@ -61,7 +121,7 @@
         dragValue.style.top = y + "px";
         console.log(dragValue);
       };
-      document.onmouseup = function() {
+      document.onmouseup = function () {
         dragValue = 0;
       };
     </script>

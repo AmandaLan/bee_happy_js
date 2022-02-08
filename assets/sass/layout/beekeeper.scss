@@ -1,6 +1,11 @@
 .beekeeperNav {
   position: relative;
   margin-top: 10rem;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   img {
     width: 15rem;
   }
@@ -18,24 +23,92 @@
   }
 }
 
-.beekeeperDetails {
+.beekeeperContainer {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60rem;
+  .drag {
     display: flex;
-    justify-content: end;
-  .beekeeperDetail {
-    display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    margin-left: 70rem;
+    p {
+      font-family: "Homemade Apple", cursive;
+      font-size: 3rem;
+    }
+    img {
+      width: 14rem;
+      margin-top: 3rem;
+    }
+  }
+  .beekeeperDetails {
+    .beekeeperDetail {
+      cursor: move;
+      .beekeeperInfos {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 500px;
+        }
+        .beekeeperInfo {
+          position: absolute;
+          text-align: center;
+          right: 37.5%;
+          width: 14rem;
+          h1 {
+            color: white;
+            font-size: 2rem;
+          }
+          p {
+            color: white;
+            font-size: 1rem;
+          }
+        }
+        &:hover {
+          img {
+            width: 900px;
+          }
+          .beekeeperInfo {
+            position: absolute;
+            text-align: center;
+            right: 32.5%;
+            width: 35rem;
+            h1 {
+              color: white;
+              font-size: 4rem;
+            }
+            p {
+              color: white;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .beekeeperDetailTwo {
     cursor: move;
-    .beekeeperInfos {
+    .beekeeperInfosTwo {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 200px;
+        width: 500px;
       }
-      .beekeeperInfo {
+      .beekeeperInfoTwo {
         position: absolute;
         text-align: center;
+        right: 37.5%;
+        width: 14rem;
         h1 {
           color: white;
           font-size: 2rem;
@@ -47,11 +120,13 @@
       }
       &:hover {
         img {
-          width: 400px;
+          width: 900px;
         }
-        .beekeeperInfo {
+        .beekeeperInfoTwo {
           position: absolute;
           text-align: center;
+          right: 32.5%;
+          width: 35rem;
           h1 {
             color: white;
             font-size: 4rem;
@@ -63,5 +138,103 @@
         }
       }
     }
+  }
+  .beekeeperDetailThree {
+    cursor: move;
+    .beekeeperInfosThree {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 500px;
+      }
+      .beekeeperInfoThree {
+        position: absolute;
+        text-align: center;
+        right: 37.5%;
+        width: 14rem;
+        h1 {
+          color: white;
+          font-size: 2rem;
+        }
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+      &:hover {
+        img {
+          width: 900px;
+        }
+        .beekeeperInfoThree {
+          position: absolute;
+          text-align: center;
+          right: 32.5%;
+          width: 35rem;
+          h1 {
+            color: white;
+            font-size: 4rem;
+          }
+          p {
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .beekeeperDetailFour {
+    cursor: move;
+    .beekeeperInfosFour {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 500px;
+      }
+      .beekeeperInfoFour {
+        position: absolute;
+        text-align: center;
+        right: 37.5%;
+        width: 14rem;
+        h1 {
+          color: white;
+          font-size: 2rem;
+        }
+        p {
+          color: white;
+          font-size: 1rem;
+        }
+      }
+      &:hover {
+        img {
+          width: 900px;
+        }
+        .beekeeperInfoFour {
+          position: absolute;
+          text-align: center;
+          right: 32.5%;
+          width: 35rem;
+          h1 {
+            color: white;
+            font-size: 4rem;
+          }
+          p {
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.footerBeekeeper {
+  position: fixed;
+  bottom: 0;
+  z-index: -1000;
+  img {
+    width: 100vw;
   }
 }
