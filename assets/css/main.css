@@ -263,11 +263,11 @@ nav .burger {
       transform: translateX(50%) translateY(-20%);
     }
     100% {
-      transform: translateX(380%);
+      transform: translateX(180%);
     }
   }
   .beeBG {
-    margin-top: 45rem;
+    margin-top: 60rem;
     position: relative;
   }
   .beeBG .bgDark {
@@ -282,7 +282,7 @@ nav .burger {
   }
   .beeBG .beeFly h2 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .beeBGDark {
@@ -551,7 +551,7 @@ footer .footerBG img {
     justify-content: space-around;
   }
   footer .network a img {
-    width: 12rem;
+    width: 8rem;
   }
   footer .network a .facebook {
     animation-duration: 2s;
@@ -852,6 +852,7 @@ body h6 {
     top: 65%;
     left: 30%;
     transform: translate(-30%);
+    margin-top: 15rem;
   }
   .title .titleImg .beekeeper .beekeperLogo {
     background-color: #d6d1f3;
@@ -885,6 +886,7 @@ body h6 {
     align-items: center;
     top: 100%;
     left: 15%;
+    margin-top: 25rem;
     transform: translate(-50%);
   }
   .title .titleImg .honey .bigbug .bug {
